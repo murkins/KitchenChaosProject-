@@ -142,6 +142,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimator
   player: {fileID: 620495807}
+--- !u!4 &80662555 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5693214176262497336, guid: 20f0fb0316a33b54680e9c0e773701d7, type: 3}
+  m_PrefabInstance: {fileID: 242938885}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &80662556 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8607150609069121343, guid: 20f0fb0316a33b54680e9c0e773701d7, type: 3}
+  m_PrefabInstance: {fileID: 242938885}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8ce9bc6f2720c0499e09fe55df3f353, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CuttingCounter
 --- !u!4 &99972372 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 329511857786834742, guid: 5890d08249f9f9e48bb9a34993c27a8f, type: 3}
@@ -338,6 +354,66 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8ce9bc6f2720c0499e09fe55df3f353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CuttingCounter
+--- !u!1001 &242938885
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 578955849}
+    m_Modifications:
+    - target: {fileID: 2802118544834120062, guid: 20f0fb0316a33b54680e9c0e773701d7, type: 3}
+      propertyPath: m_Name
+      value: CuttingCounter (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5693214176262497336, guid: 20f0fb0316a33b54680e9c0e773701d7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5693214176262497336, guid: 20f0fb0316a33b54680e9c0e773701d7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5693214176262497336, guid: 20f0fb0316a33b54680e9c0e773701d7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5693214176262497336, guid: 20f0fb0316a33b54680e9c0e773701d7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5693214176262497336, guid: 20f0fb0316a33b54680e9c0e773701d7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5693214176262497336, guid: 20f0fb0316a33b54680e9c0e773701d7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5693214176262497336, guid: 20f0fb0316a33b54680e9c0e773701d7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5693214176262497336, guid: 20f0fb0316a33b54680e9c0e773701d7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5693214176262497336, guid: 20f0fb0316a33b54680e9c0e773701d7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5693214176262497336, guid: 20f0fb0316a33b54680e9c0e773701d7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 880394565393195088, guid: 20f0fb0316a33b54680e9c0e773701d7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1641449648}
+  m_SourcePrefab: {fileID: 100100000, guid: 20f0fb0316a33b54680e9c0e773701d7, type: 3}
 --- !u!1001 &288742754
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1037,6 +1113,7 @@ Transform:
   - {fileID: 2073314197}
   - {fileID: 342658795}
   - {fileID: 233439823}
+  - {fileID: 80662555}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &582479899 stripped
@@ -1654,6 +1731,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 329511857786834742, guid: 5890d08249f9f9e48bb9a34993c27a8f, type: 3}
   m_PrefabInstance: {fileID: 1927085657}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1641449646 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 880394565393195088, guid: 20f0fb0316a33b54680e9c0e773701d7, type: 3}
+  m_PrefabInstance: {fileID: 242938885}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1641449648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1641449646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39e3e5f63c8001e4ca41697261d52811, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CuttingCounterVisual
+  cuttingCounter: {fileID: 80662556}
 --- !u!1001 &1662706912
 PrefabInstance:
   m_ObjectHideFlags: 0

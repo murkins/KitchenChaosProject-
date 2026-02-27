@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2ef3ca8175afa414dabfb4990a5ec8d1, type: 3}
-  m_Name: CheeseBlock-ChesseSlices 1
+  m_Name: CheeseBlock-ChesseSlices
   m_EditorClassIdentifier: Assembly-CSharp::CuttingRecipeSO
   input: {fileID: 11400000, guid: 44d47c1b415a56346b5c5f8032d0f6b5, type: 2}
   output: {fileID: 11400000, guid: d9364d38ce17d814c91298db1ba18dbf, type: 2}

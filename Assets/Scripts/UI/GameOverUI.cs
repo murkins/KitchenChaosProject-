@@ -1,11 +1,11 @@
 using System;
 using TMPro;
 using UnityEngine;
-using UnityEngine.LowLevelPhysics2D;
 
-public class GameStartCountdownUI : MonoBehaviour
-{
-    [SerializeField] private TextMeshProUGUI countdownText;
+public class GameOverUI : MonoBehaviour {
+    
+    [SerializeField] private TextMeshProUGUI recipesDeliveryText;
+    
 
     private void Start() {
         KitchenGameManager.Instance.OnStateChanged += KitchenGameManager_OnStateChanged;
@@ -14,8 +14,10 @@ public class GameStartCountdownUI : MonoBehaviour
     }
 
     private void KitchenGameManager_OnStateChanged(object sender, EventArgs e) {
-        if (KitchenGameManager.Instance.IsCountdownToStartActive()) {
+        if (KitchenGameManager.Instance.IsGameOver()) {
             Show();
+            
+            recipesDeliveryText.text = DeliveryManager.Instance.GetSuccessfulRecipesAmount().ToString();
         }
         else {
             Hide();
@@ -23,7 +25,7 @@ public class GameStartCountdownUI : MonoBehaviour
     }
 
     private void Update() {
-        countdownText.text = Mathf.Ceil(KitchenGameManager.Instance.GetCountdownToStartTimer()).ToString();
+        
     }
     
     private void Show() {
@@ -33,4 +35,5 @@ public class GameStartCountdownUI : MonoBehaviour
     private void Hide() {
         gameObject.SetActive(false);
     }
+    
 }

@@ -10,7 +10,6 @@ public class KitchenGameManager : MonoBehaviour
    public event EventHandler OnGamePaused;
    public event EventHandler OnGameUnpaused;
    
-  
    private enum State {
       WaitingToStart,
       CountdownToStart,
